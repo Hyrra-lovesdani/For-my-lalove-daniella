@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for Daniella</title>
+    <style>
+        body {
+            background-color: #f0e1ff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .heart {
+            font-size: 100px;
+            color: red;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        button {
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ff69b4;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="heart">❤️</div>
+        <button onclick="showMessage()">Click Me!</button>
+        <div class="message" id="message">
+            I love you so much Daniella Brenda Sotes. I love youuu more than anything in this world. You're the most beautiful girl in my eyes and no one can take my love for you. Will you marry me love?
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
